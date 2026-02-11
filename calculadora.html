@@ -1,0 +1,25 @@
+<script>
+
+let n1 = parsetFloat(prompt("Digite o primeiro número."))
+let n2 = parsetFloat(prompt("Digite o segundo número."));
+let op = parsetInt(prompt("Digite 1 para soma, 2 para subtração, 3 para multiplicação e 4 para divisão"));
+
+ switch(op){
+case 1 : let soma = n1 + n2;
+  document.write ("A soma dos dois valores é: " + soma);
+   break;
+  
+case 2 : let sub = n1 - n2;
+  document.write (" A subtração dos dois valores é: " + sub);
+   break;
+
+case 3 : let multi = n1 * n2;
+  document.write ("A multiplicaãço dos dois valores é: " + multi);
+  break;
+  
+case 4 : let div = n1 / n2;
+ document.write ("A divisão dos dois  valores é: " + div);
+ break;
+default : document.write("valor inválido");
+ }
+</script>
